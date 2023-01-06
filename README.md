@@ -15,7 +15,21 @@ TODO - include img where will be the working procces of SPA
 
 The benefits of a SPA include much less network activity, faster responses to user interactions, smaller server loads. I also makes it possible to use fancy view transitions, which give the appearance of native application.
 
-TODO: features of SPA: client-side routing...
+### Technical features
+- [Client side routing](#Client-side-routing)
+- [Markup management](#Markup-management)
+- [Markup management](#Markup-management)
+
+
+### Client side routing - route manager
+Model-view-controller architecture went more mainstream and with it came the concept of routing. Note that routing itself does not have anything in common with MVC. In ASP.NET you could define routes to trigger controllers that would ultimately generate the desired markup and send it on its way to the client.
+A SPA is client-heavy and this responsibility must be moved to the browser.
+
+### Markup management
+Traditionally web devs have realied on the server to generate any dynamic markup a page request needs. This generally does not apply for a single page app,
+except for the initial  page request. Instead a SPA relies more on creating views in the client as they are needed(on demand).
+You can extend these concepts to integrate deferred content loading, offloading and templates to LocalStorage to be retrivied on demand.
+
 
 
 
